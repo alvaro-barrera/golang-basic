@@ -31,4 +31,34 @@ func main() {
 	area_square := base_square * base_square
 	println("Area: ", area_square)
 
+	x := 30
+	y := 5
+
+	//sum
+	result := x + y
+	println("Sum: ",result)
+
+	//subtraction
+	result = x - y
+	println("Subtraction: ",result)
+
+	//multiplication
+	result = x * y
+	println("Multiplication: ",result)
+
+	//division
+	result = x / y
+	println("Division: ",result)
+
+	//remainder
+	result = x % y
+	println("Remainder: ",result)
+
+	//incremental
+	x++
+	println("Incremental: ",x)
+
+	//decremental
+	x--
+	println("Decremental: ",x)
 }
