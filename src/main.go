@@ -2,6 +2,18 @@ package main
 
 import "fmt"
 
+func normalFunction(message string) {
+	fmt.Println(message)
+}
+
+func doubleValue(a int) int {
+	return a * 2
+}
+
+func doubleReturn(a int) (c, d int) {
+	return a, a * 2
+}
+
 func main() {
 	//const
 	const pi float64 = 3.14
@@ -61,4 +73,14 @@ func main() {
 	//decremental
 	x--
 	println("Decremental: ",x)
+
+	normalFunction("Message")
+
+	value := doubleValue(6)
+
+	fmt.Println("Value: ",value)
+
+	value1, _ := doubleReturn(4)
+
+	fmt.Println("Value1: ",value1)
 }
