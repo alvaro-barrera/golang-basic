@@ -140,4 +140,22 @@ func main() {
 	default:
 		fmt.Println("Sin condición")
 	}
+
+	//Defer
+	defer fmt.Println("Close")
+	fmt.Println("After defer")
+
+	//Continue - Break
+	for i := 0; i < 10; i++ {
+		if i == 4 {
+			normalFunction("Continue")
+			continue
+		}
+
+		if i == 7 {
+			normalFunction("Break")
+			break
+		}
+		
+	}
 }
