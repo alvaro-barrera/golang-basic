@@ -102,4 +102,42 @@ func main() {
 	// 	fmt.Println(countForever)
 	// 	countForever++		
 	// }
+
+	//If
+	valueIf1 := 1
+	valueIf2 := 2
+	if valueIf1 == 1 {
+		fmt.Println("Es 1")
+	}else{
+		fmt.Println("No es 1")
+	}
+	if valueIf1 == 1 && valueIf2 == 3{
+		fmt.Println("Es verdad, AND")
+	}else{
+		fmt.Println("Es falso, AND")
+	}
+
+	if valueIf1 == 0 || valueIf2 == 2{
+		fmt.Println("Es verdad, OR")
+	}else{
+		fmt.Println("Es falso, OR")
+	}
+
+	modulo := 7 % 2
+	switch modulo {
+	case 0:
+		normalFunction("Es par")
+	default:
+		normalFunction("Es impar")
+	}
+
+	valueSwitch := 60
+	switch {
+	case valueSwitch > 100:
+		fmt.Println("Es mayor a 100")
+	case valueSwitch <0:
+		fmt.Println("Es menor a 0")
+	default:
+		fmt.Println("Sin condición")
+	}
 }
