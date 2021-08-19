@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
+
 
 func normalFunction(message string) {
 	fmt.Println(message)
@@ -156,6 +160,30 @@ func main() {
 			normalFunction("Break")
 			break
 		}
-		
 	}
+
+	//Array
+	var array [5]int
+	array[0] = 3
+	array[1] = 1
+	fmt.Println(array, len(array), cap(array))
+
+	//Slice
+	slice := []int{0,1,2,3}
+	fmt.Println(slice, len(slice), cap(slice))
+
+	//Slice methods
+	normalFunction(strconv.Itoa(slice[0]))
+	fmt.Println(slice[:3])
+	fmt.Println(slice[2:4])
+	fmt.Println(slice[3:])
+
+	//Append
+	slice = append(slice, 7)
+	fmt.Println(slice)
+
+	//Append new list
+	newSlice := []int{8,9,10}
+	slice = append(slice, newSlice...)
+	fmt.Println(slice)
 }
