@@ -83,4 +83,23 @@ func main() {
 	value1, _ := doubleReturn(4)
 
 	fmt.Println("Value1: ",value1)
+
+	//For
+	for i := 0; i < 12; i++ {
+		fmt.Println(i)
+	}
+
+	//For while
+	count := 0
+	for count < 15 {
+		fmt.Println(count)
+		count++
+	}
+
+	//For forever
+	// countForever :=0
+	// for {
+	// 	fmt.Println(countForever)
+	// 	countForever++		
+	// }
 }
