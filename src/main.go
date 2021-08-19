@@ -18,6 +18,20 @@ func doubleReturn(a int) (c, d int) {
 	return a, a * 2
 }
 
+func isPalindromo(text string) {
+	var textReverse string
+
+	for i := len(text) - 1; i >= 0; i-- {
+		textReverse += string(text[i])
+	}
+
+	if text == textReverse {
+		normalFunction("Es palindromo")
+	}else{
+		normalFunction("No es palindromo")
+	}
+}
+
 func main() {
 	//const
 	const pi float64 = 3.14
@@ -186,4 +200,14 @@ func main() {
 	newSlice := []int{8,9,10}
 	slice = append(slice, newSlice...)
 	fmt.Println(slice)
+
+	//Range
+	sliceRange := []string{"Hola", "cómo", "estás?"}
+
+	for i := range sliceRange {
+		fmt.Println(i)
+	}
+
+	//Palindromo
+	isPalindromo("amor a roma")
 }
