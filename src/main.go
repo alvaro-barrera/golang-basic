@@ -210,4 +210,19 @@ func main() {
 
 	//Palindromo
 	isPalindromo("amor a roma")
+
+	//map
+	array_ := make(map[string]int)
+
+	array_["Jose"] = 2
+	array_["Juan"] = 2
+
+	fmt.Println(array_)
+
+	for i, v := range array_ {
+		fmt.Println(i, v)
+	}
+
+	value_array, ok := array_["Jose"]
+	fmt.Println(value_array, ok)
 }
