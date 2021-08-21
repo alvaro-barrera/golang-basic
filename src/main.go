@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"Code/golang_first_app/mypackage"
+	"fmt")
+
 
 func main() {
-	fmt.Println("Hello world")
+	var myCarPublic mypackage.CarPublic
+	myCarPublic.Brand = "Ferrari"
+	myCarPublic.Year = 2021
+	fmt.Println(myCarPublic)
+	mypackage.PrintMessage("Hello World")
 }
